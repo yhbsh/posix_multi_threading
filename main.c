@@ -26,7 +26,7 @@ void *add(void *argp) {
 }
 
 int main(void) {
-  printf("ARR_LEN = %d\nTHREADS_COUNT = %d\nTHREAD_RANGE = %d\n", ARR_LEN, THREADS_COUNT, THREAD_RANGE);
+  fprintf(stderr, "ARR_LEN = %d\nTHREADS_COUNT = %d\nTHREAD_RANGE = %d\n", ARR_LEN, THREADS_COUNT, THREAD_RANGE);
 
   srand(time(0));
   pthread_mutex_init(&sum_mutex, NULL);
