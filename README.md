@@ -1,1 +1,1 @@
-1- Parallel Array Sum
+- Parallel Array Sum
