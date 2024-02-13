@@ -9,7 +9,7 @@ static int arr[ARR_LEN];
 static int sum = 0;
 pthread_mutex_t sum_mutex;
 
-void *routine(void *argp) {
+void *add(void *argp) {
   int temp = *(int *)argp;
 
   pthread_mutex_lock(&sum_mutex);
@@ -30,7 +30,7 @@ int main(void) {
   pthread_t tid[ARR_LEN] = {0};
 
   for (int i = 0; i < ARR_LEN; i++) {
-    pthread_create(&tid[i], NULL, routine, &arr[i]);
+    pthread_create(&tid[i], NULL, add, &arr[i]);
   }
 
   for (int i = 0; i < ARR_LEN; i++) {
