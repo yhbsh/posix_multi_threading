@@ -4,4 +4,4 @@ run: main
 	./main
 
 main: main.c
-	cc main.c -o main
+	cc -g3 main.c -o main
