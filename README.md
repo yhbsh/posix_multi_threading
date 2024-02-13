@@ -5,7 +5,7 @@ This document lists various exercises to practice multi-threading concepts in C 
 - [ ] **Producer-Consumer Problem**
   - Implement a scenario where multiple producers are producing items and multiple consumers are consuming them. Use mutexes and condition variables to synchronize access to a shared buffer.
 
-- [ ] **Parallel Array Sum**
+- [x] **Parallel Array Sum**
   - Create a program to calculate the sum of a large array. Divide the array into chunks and use multiple threads to calculate the sum of each chunk. Finally, aggregate these sums in the main thread.
 
 - [ ] **Matrix Multiplication**
